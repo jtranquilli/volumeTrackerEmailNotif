@@ -1,11 +1,9 @@
 import yfinance as fy
 import pandas as pd
 import smtplib
+import time
 
-#recall sharpe ratio assumes that the portfolio's returns are normally distributed
-#implicit in its usage of the standard deviation of excess return
-
-sender_email = "jtranqs@gmail.com"
+sender_email = "redacted"
 rec_email = "redacted"
 password = "redacted"
 message = ""
@@ -24,7 +22,8 @@ for stock in df['Symbol']:
     
     else:
         try:
-                   
+            time.sleep(0.25)
+            
             stock_info = fy.Ticker(stock)
 
             history = stock_info.history(period="5d")
