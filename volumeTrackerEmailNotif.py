@@ -6,8 +6,8 @@ import smtplib
 #implicit in its usage of the standard deviation of excess return
 
 sender_email = "jtranqs@gmail.com"
-rec_email = "jtranqs@gmail.com"
-password = "lujqsyncqdvgbkew"
+rec_email = "redacted"
+password = "redacted"
 message = ""
 m = ""
 
